@@ -1,15 +1,15 @@
 /**********************************************************************************************
  *
- * 5/7 - Conversão de Tempo  
+ * 2/3 - Idade em Dias  
  *
  ******************************** Desafio:
  *
  *      Você terá o desafio de ler um valor inteiro correspondente à idade de uma pessoa em dias 
  * e informe-a em anos, meses e dias
- *
+ * 
  *      Obs.: apenas para facilitar o cálculo, considere todo ano com 365 dias e todo mês com 30 
- * dias. Nos casos de teste nunca haverá uma situação que permite 12 meses e alguns dias, como 
- * 360, 363 ou 364. 
+ * dias. Nos casos de teste nunca haverá uma situação que permite 12 meses e alguns dias, como 360, 
+ * 363 ou 364. 
  *
  ******************************** Entrada:
  *
@@ -21,18 +21,24 @@
  *
  **********************************************************************************************/
 
-using System;
+import java.util.Scanner;
 
-class IdadeEmDias 
-{  
-  public static void Main (string[] args) 
-  {  
-    var idadeEmDias = int.Parse(Console.ReadLine());
-   
-    var anos = (idadeEmDias / 365); 
-    var meses = (idadeEmDias % 365) / 30; 
-    var dias =  (idadeEmDias % 365) % 30;
+public class IdadeEmDias {
+    
+    public static void main(String[] args) {
 
-    Console.WriteLine($"{anos} ano(s)\n{meses} mes(es)\n{dias} dia(s)");
-  }
-}
+        Scanner input = new Scanner(System.in);
+
+        int idadeDias = input.nextInt();
+        int anos = idadeDias / 365;
+        int meses = ((idadeDias % 365) / 30);
+        int dias = ((idadeDias % 365) % 30);
+
+        System.out.println(anos + " ano(s)");
+        System.out.println(meses + " mes(es)");
+        System.out.println(dias + " dia(s)");
+
+        input.close();
+    }
+ 
+} 
