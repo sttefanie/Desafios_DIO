@@ -1,6 +1,6 @@
 # Desafios_DIO
 
-### Os desafios dos Bootcamps da Digital Innovation One, solucionados !!
+### Os desafios dos Bootcamps da Digital Innovation One solucionados !!
 
 C Sharp :heavy_check_mark:
 Java :heavy_check_mark:
